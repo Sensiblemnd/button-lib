@@ -1,6 +1,8 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.1",
   "license": "MIT",
+  "name": "fancy-button-lib",
+  "author": "Rob Lloveras",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -21,9 +23,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "peerDependencies": {
-    "react": ">=16"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -35,16 +34,14 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "mylib",
-  "author": "Rob Lloveras",
-  "module": "dist/mylib.esm.js",
+  "module": "dist/buttonlib.esm.js",
   "size-limit": [
     {
-      "path": "dist/mylib.cjs.production.min.js",
+      "path": "dist/buttonlib.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/mylib.esm.js",
+      "path": "dist/buttonlib.esm.js",
       "limit": "10 KBr"
     }
   ],
@@ -58,19 +55,26 @@
     "@storybook/react": "^6.1.20",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@types/styled-components": "^5.1.9",
     "babel-loader": "^8.2.2",
     "husky": "^5.1.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-is": "^17.0.1",
     "size-limit": "^4.9.2",
+    "styled-components": "^5.2.3",
     "tsdx": "^0.14.1",
     "tslib": "^2.2.0",
     "typescript": "^4.2.2"
   },
+  "peerDependencies": {
+    "framer-motion": ">=4.1",
+    "react": ">=17",
+    "react-dom": ">=17"
+  },
   "dependencies": {
-    "@types/styled-components": "^5.1.7",
-    "react-player": "^2.9.0",
-    "styled-components": "^5.2.1"
+    "framer-motion": "^4.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
